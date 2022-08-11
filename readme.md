@@ -18,6 +18,6 @@
 
 | Day | Questions |
 | --- | ----------- |
-| 1 | Validate Binary Search Tree |
 | | |
+| 1 | Validate Binary Search Tree |
 

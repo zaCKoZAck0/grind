@@ -9,6 +9,7 @@
 ---
 
 **Streak: 1 days** :fire:
+**Breaks: 0 days** :cry:
 
 ### Latest Question Explaination
 

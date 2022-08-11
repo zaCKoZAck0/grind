@@ -32,7 +32,7 @@ class Solution:
         inOrder(root)
         if len(list(set(self.psudoTree)))==len(self.psudoTree):
             #values have to be greater or smaller
-            #tree can't have duplicates/equal values
+            #BST can't have duplicates/equal values
             #checking the same using python "set"
             return self.psudoTree == sorted(self.psudoTree)
             #if valid binary search tree inorder traveral will be sorted 

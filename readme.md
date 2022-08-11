@@ -40,11 +40,27 @@ class Solution:
             return False
             #false
 ```
+## Question 2 (Non-constructible Change)
+
+The solution is same as you would approach in your mind you start from the smallest element and you start from minChange = 0, and you add each coin to **minSum** keeping in mind that if you add a coin it should not exceed minChange + 1
+
+```python
+def nonConstructibleChange(coins):
+    # Write your code here.
+    coins = sorted(coins)
+    minimumChange = 0
+    for coin in coins:
+        if coin>minimumChange+1:
+            break
+        minimumChange+=coin
+    return minimumChange + 1
+```
 ---
 
 
 | Day | Questions |
 | --- | ----------- |
 | | |
-| 1 | Validate Binary Search Tree |
+|1|Non-constructible Change|
+|1|Validate Binary Search Tree|
 

@@ -31,7 +31,7 @@ class Solution:
             inOrder(root.right)
         inOrder(root)
         if len(list(set(self.psudoTree)))==len(self.psudoTree):
-            #values have be greater or smaller
+            #values have to be greater or smaller
             #tree can't have duplicates/equal values
             #checking the same using python "set"
             return self.psudoTree == sorted(self.psudoTree)

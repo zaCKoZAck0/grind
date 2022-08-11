@@ -8,7 +8,7 @@
 >Till: Thu, 11 Aug
 ---
 
-**Streak: 0 days** :fire:
+**Streak: 1 days** :fire:
 
 ### Latest Question Explaination
 

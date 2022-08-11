@@ -1,14 +1,15 @@
 # Grind
 
 ### Keeping a record of all the Questions I solve daily, so I don't slack off.
+
+**Streak: 1 days** :fire:
+
 ---
 >From:  Thu, 11 Aug
 ---
 ---
 >Till: Thu, 11 Aug
 ---
-
-**Streak: 1 days** :fire:
 **Breaks: 0 days** :cry:
 
 ### Latest Question Explaination

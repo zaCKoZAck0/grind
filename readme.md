@@ -1,6 +1,7 @@
 # Grind
 
 ### Keeping a record of all the Questions I solve daily, so I don't slack off.
+
 ---
 >From:  Thu, 11 Aug
 ---
@@ -16,8 +17,7 @@
 ## Question 1 (Validate Binary Search Tree)
 
 The solution was really simple, first used the property of BST that, inorder traversal
-of BST gives sorted array, so if the array is not sorted it's not a valid BST.
-Below is the explaination of the same.
+of BST gives sorted array, so if the array is not sorted it's not a valid BST. Below is the explaination of the same.
 
 ```python
 class Solution:
@@ -64,3 +64,5 @@ def nonConstructibleChange(coins):
 |1|Non-constructible Change|
 |1|Validate Binary Search Tree|
 
+
+\* not only leetcode but other platforms as well.

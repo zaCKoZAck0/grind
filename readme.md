@@ -1,4 +1,4 @@
-# Grind
+# Grind :zap:
 
 ### Keeping a record of all the Questions I solve daily, so I don't slack off.
 

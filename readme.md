@@ -6,61 +6,59 @@
 >From:  Thu, 11 Aug
 ---
 ---
->Till: Thu, 11 Aug
+>Till: Thu, 12 Aug
 ---
 
-**Streak: 1 days** :fire:
+**Streak: 2 days** :fire:
 
 ### Latest Question Explaination
 
 ---
-## Question 1 (Validate Binary Search Tree)
 
-The solution was really simple, first used the property of BST that, inorder traversal
-of BST gives sorted array, so if the array is not sorted it's not a valid BST. Below is the explaination of the same.
+### Question 1 (Find Closest Value in Bst)
 
-```python
-class Solution:
-    def isValidBST(self, root: Optional[TreeNode]) -> bool:
-        self.psudoTree = []
-        def inOrder(root):
-            if root==None:
-                return
-            inOrder(root.left)
-            self.psudoTree.append(root.val)
-            inOrder(root.right)
-        inOrder(root)
-        if len(list(set(self.psudoTree)))==len(self.psudoTree):
-            #values have to be greater or smaller
-            #BST can't have duplicates/equal values
-            #checking the same using python "set"
-            return self.psudoTree == sorted(self.psudoTree)
-            #if valid binary search tree inorder traveral will be sorted 
-        else:
-            return False
-            #false
-```
-## Question 2 (Non-constructible Change)
+I got the approach at first but it was pretty mushed up, to find the nearest value the approact was to find the minimum absolute difference between element and target, though I got the 99% of the solution few misunderstandings made it hard for me.
 
-The solution is same as you would approach in your mind you start from the smallest element and you start from minChange = 0, and you add each coin to **minSum** keeping in mind that if you add a coin it should not exceed minChange + 1
+1 > Base Case:
+    if on root return the last closest value.
+2 > Main Logic:
+    find the minimum absolute difference between current and previous minimum
+3> Recursive call:
+    traverse like normal bst 
+        if larger go left
+        if smaller go right
+        else if value is same as target no value will bw smaller than that.
 
 ```python
-def nonConstructibleChange(coins):
-    # Write your code here.
-    coins = sorted(coins)
-    minimumChange = 0
-    for coin in coins:
-        if coin>minimumChange+1:
-            break
-        minimumChange+=coin
-    return minimumChange + 1
+def findClosestValueInBst(tree, target):
+    # Write your code here
+
+    def treeTraversal(tree, closest):
+        if not tree:
+            return closest
+        if abs(target-closest)>abs(target-tree.value):
+            closest = tree.value
+        if target < tree.value:
+            return treeTraversal(tree.left,closest)
+        elif target > tree.value:
+            return treeTraversal(tree.right,closest)
+        return closest
+
+    return(treeTraversal(tree,float('inf')))
+# This is the class of the input tree. Do not edit.
+class BST:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
 ```
 ---
 
 
 | Day | Questions |
 | --- | ----------- |
-| | |
+|2|Find Closest Value in Bst|
 |1|Non-constructible Change|
 |1|Validate Binary Search Tree|
 

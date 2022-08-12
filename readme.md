@@ -53,6 +53,34 @@ class BST:
         self.right = None
 
 ```
+### Question 2 (Lowest Common Ancestor of a Binary Search Tree)
+
+The approach is specific to property of BST, if we want to find the common elment we have to find the split.
+How a split occurs:
+1. Both elements on diffent sub tree.
+2. One element == root and other exist in subtree.
+If we find a split we return where the split occured. 
+
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        current = root
+        while current:
+            if p.val > current.val and q.val > current.val:
+                current = current.right
+            elif p.val < current.val and q.val < current.val:
+                current = current.left
+            else:
+                return current
+```
+
 ---
 
 

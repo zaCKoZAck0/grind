@@ -86,6 +86,7 @@ class Solution:
 
 | Day | Questions |
 | --- | ----------- |
+|2|Lowest Common Ancestor of a Binary Search Tree|
 |2|Find Closest Value in Bst|
 |1|Non-constructible Change|
 |1|Validate Binary Search Tree|

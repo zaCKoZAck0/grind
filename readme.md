@@ -76,6 +76,36 @@ In this problem I tried to put sliding window method as to find if the given sli
 1. i unit forward if word not present.
 2. wordLength unit forward if word is found
 3. _i back to original i if element not present in word. 
+
+```python
+class Solution:
+    def findSubstring(self, s: str, words: List[str]) -> List[int]:
+        frequency = {}
+        for i in words:
+            frequency[i] = frequency.get(i, 0) + 1
+        wordLength = len(words[0])
+        i = 0
+        _i = 0
+        j = wordLength
+        localMap = frequency.copy()
+        result=[]
+        while(j<=len(s)+wordLength):
+            if s[i:j] in words and localMap[s[i:j]]!=0:
+                localMap[s[i:j]]-=1
+                i+=wordLength
+                j+=wordLength
+                if sum(localMap.values())==0:
+                    result.append(_i)
+            else:
+                i = _i
+                j = i + wordLength
+                i += 1
+                _i += 1
+                j += 1
+                localMap = frequency.copy()
+        return (result)
+```
+
 ---
 
 

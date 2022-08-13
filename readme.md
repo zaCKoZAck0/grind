@@ -70,11 +70,18 @@ class BinaryTree:
         self.right = None
 ```
 
+### 3. Substring with Concatenation of All Words
+
+In this problem I tried to put sliding window method as to find if the given slide exists in given words or not, also there can be duplicate values so maintain a map of frequency that a word is occurring atmost k times. Sliding window back and forth on accordance to if the element exists or not in given words.
+1. i unit forward if word not present.
+2. wordLength unit forward if word is found
+3. _i back to original i if element not present in word. 
 ---
 
 
 | Day | Questions |
 | --- | ----------- |
+|3|Substring with Concatenation of All Words|
 |3|Node Depths|
 |3|Branch Sums|
 |2|Lowest Common Ancestor of a Binary Search Tree|

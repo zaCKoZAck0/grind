@@ -6,79 +6,46 @@
 >From:  Thu, 11 Aug
 ---
 ---
->Till: Thu, 12 Aug
+>Till: Sat, 13 Aug
 ---
 
-**Streak: 2 days** :fire:
+**Streak: 3 days** :fire:
 
-### Latest Question Explaination :octopus:
+### Latest Question Explanation :octopus:
 
 ---
+### 1. Branch Sums
 
-### Question 1 (Find Closest Value in Bst)
-
-I got the approach at first but it was pretty mushed up, to find the nearest value the approact was to find the minimum absolute difference between element and target, though I got the 99% of the solution few misunderstandings made it hard for me.
-
-1 > Base Case:
-    if on root return the last closest value.
-2 > Main Logic:
-    find the minimum absolute difference between current and previous minimum
-3> Recursive call:
-    traverse like normal bst 
-        if larger go left
-        if smaller go right
-        else if value is same as target no value will bw smaller than that.
+The solution is that visit a branch only once and keep adding the values to the sum of the branch 
+approach:
+1. add root to the sum
+2. if right is available go right
+3. if left is available go left
+4. if leaf is reached add the sum to the output array
 
 ```python
-def findClosestValueInBst(tree, target):
-    # Write your code here
-
-    def treeTraversal(tree, closest):
-        if not tree:
-            return closest
-        if abs(target-closest)>abs(target-tree.value):
-            closest = tree.value
-        if target < tree.value:
-            return treeTraversal(tree.left,closest)
-        elif target > tree.value:
-            return treeTraversal(tree.right,closest)
-        return closest
-
-    return(treeTraversal(tree,float('inf')))
-# This is the class of the input tree. Do not edit.
-class BST:
+# This is the class of the input root. Do not edit it.
+class BinaryTree:
     def __init__(self, value):
         self.value = value
         self.left = None
         self.right = None
 
-```
-### Question 2 (Lowest Common Ancestor of a Binary Search Tree)
 
-The approach is specific to property of BST, if we want to find the common elment we have to find the split.
-How a split occurs:
-1. Both elements on diffent sub tree.
-2. One element == root and other exist in subtree.
-If we find a split we return where the split occured. 
-
-```python
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
-class Solution:
-    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        current = root
-        while current:
-            if p.val > current.val and q.val > current.val:
-                current = current.right
-            elif p.val < current.val and q.val < current.val:
-                current = current.left
-            else:
-                return current
+def branchSums(root):
+    # Write your code here.
+    def traverseBranch(root,sum,arr):
+        sum+=root.value
+        if not root.left and not root.right:
+            arr.append(sum)
+            return
+        if root.left:
+            traverseBranch(root.left,sum,arr)
+        if root.right:
+            traverseBranch(root.right,sum,arr)
+    array = []
+    traverseBranch(root,0,array)
+    return (array)
 ```
 
 ---
@@ -86,6 +53,7 @@ class Solution:
 
 | Day | Questions |
 | --- | ----------- |
+|3|Branch Sums|
 |2|Lowest Common Ancestor of a Binary Search Tree|
 |2|Find Closest Value in Bst|
 |1|Non-constructible Change|

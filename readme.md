@@ -48,11 +48,34 @@ def branchSums(root):
     return (array)
 ```
 
+### 2. Node Depths
+
+The approach I followed was summing up all the nodes from depth = 0 to root to depth = k, kth node from root.
+currentDepth+(all depthLeft)+(all depthRight)
+
+```python3
+def nodeDepths(root, depth=0):
+    if not root:
+        return 0
+    return depth + nodeDepths(root.left, depth+1) + nodeDepths(root.right, depth+1)
+    
+        
+
+
+# This is the class of the input binary tree.
+class BinaryTree:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+```
+
 ---
 
 
 | Day | Questions |
 | --- | ----------- |
+|3|Node Depths|
 |3|Branch Sums|
 |2|Lowest Common Ancestor of a Binary Search Tree|
 |2|Find Closest Value in Bst|

@@ -30,7 +30,6 @@ try {
     data = fs.readFileSync('questions.md', 'utf8');
     questions = data;
     noOfQns=data.toString().split('\n').length;
-    console.log(res)
 } catch (err) {
     console.error(err);
 }

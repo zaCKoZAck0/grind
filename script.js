@@ -22,10 +22,13 @@ const qnHeader = "\n\n### Latest Question Explanation :octopus:\n"
 
 
 let explaination = "";
+let questions = "";
 
 try {
-  const data = fs.readFileSync('explaination.md', 'utf8');
+  let data = fs.readFileSync('explaination.md', 'utf8');
   explaination = data;
+  data = fs.readFileSync('questions.md', 'utf8');
+  questions = data;
 } catch (err) {
   console.error(err);
 }

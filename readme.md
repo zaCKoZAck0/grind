@@ -1,24 +1,21 @@
 # Grind :zap:
-
 ### Keeping a record of all the Questions I solve daily, so I don't slack off.
 
 ---
->From:  Thu, 11 Aug
+> Thu Aug 11 2022
 ---
+
 ---
->Till: Tue, 16 Aug
+> Tue Aug 16 2022
 ---
 
 **Streak: 6 days** :fire:
 
 ### Latest Question Explanation :octopus:
-
 ---
 
 
 ---
-
-
 | Day | Questions |
 | --- | ----------- |
 |5|Integer to Roman|

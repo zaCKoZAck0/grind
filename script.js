@@ -16,7 +16,7 @@ const date = hr +
     hr + hr +
     `> ${tillDate}` +
     hr;
-const streak = `**Streak: ${diffDays} days** :fire:`
+const streak = "\n"+`**Streak: ${diffDays} days** :fire:`
 
 const qnHeader = "\n\n### Latest Question Explanation :octopus:\n"
 
@@ -35,7 +35,7 @@ try {
 
 
 
-fs.writeFileSync('helloworld.md', header + date + streak + qnHeader + explaination + questions, function (err) {
+fs.writeFileSync('readme.md', header + date + streak + qnHeader + explaination + questions, function (err) {
     if (err) return console.log(err);
     console.log('Hello World > helloworld.txt');
 });

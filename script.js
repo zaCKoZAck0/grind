@@ -16,26 +16,27 @@ const date = hr +
     hr + hr +
     `> Till: ${tillDate}` +
     hr;
-const streak = "\n" + `**Streak: ${diffDays} days** :fire:`
 
 const qnHeader = "\n\n### Latest Question Explanation :octopus:\n"
 
 
 let explaination = "";
 let questions = "";
+let noOfQns = 0
 
 try {
     let data = fs.readFileSync('explaination.md', 'utf8');
     explaination = data;
     data = fs.readFileSync('questions.md', 'utf8');
     questions = data;
-    let res=data.toString().split('\n').length;
+    noOfQns=data.toString().split('\n').length;
     console.log(res)
 } catch (err) {
     console.error(err);
 }
 
-
+const streak = "\n" + `**Streak: ${diffDays} days** :fire:`+ "\n" +
+                `**Number of Questions: ${noOfQns-5}** :relieved:`
 
 fs.writeFileSync('readme.md', header + date + streak + qnHeader + explaination + questions, function (err) {
     if (err) return console.log(err);

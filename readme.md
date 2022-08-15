@@ -9,7 +9,7 @@
 > Till: Tue Aug 16 2022
 ---
 
-**Streak: 6 days** :fire:
+**Streak: 6 days** :fire: &
 **Number of Questions: 11** :relieved:
 
 ### Latest Question Explanation :octopus:

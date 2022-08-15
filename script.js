@@ -34,7 +34,7 @@ try {
     console.error(err);
 }
 
-const streak = "\n" + `**Streak: ${diffDays} days** :fire:`+ "\n" +
+const streak = "\n" + `**Streak: ${diffDays} days** :fire: &`+ "\n" +
                 `**Number of Questions: ${noOfQns-5}** :relieved:`
 
 fs.writeFileSync('readme.md', header + date + streak + qnHeader + explaination + questions, function (err) {

@@ -35,7 +35,7 @@ try {
 
 
 
-fs.writeFileSync('helloworld.md', header + date + streak + qnHeader + explaination, function (err) {
+fs.writeFileSync('helloworld.md', header + date + streak + qnHeader + explaination + questions, function (err) {
     if (err) return console.log(err);
     console.log('Hello World > helloworld.txt');
 });

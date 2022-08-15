@@ -21,9 +21,18 @@ const streak = `**Streak: ${diffDays} days** :fire:`
 const qnHeader = "\n\n### Latest Question Explanation :octopus:\n"
 
 
+let explaination = "";
+
+try {
+  const data = fs.readFileSync('explaination.md', 'utf8');
+  explaination = data;
+} catch (err) {
+  console.error(err);
+}
 
 
-fs.writeFileSync('helloworld.md', header + date + streak + qnHeader, function (err) {
+
+fs.writeFileSync('helloworld.md', header + date + streak + qnHeader + explaination, function (err) {
     if (err) return console.log(err);
     console.log('Hello World > helloworld.txt');
 });
@@ -46,12 +55,17 @@ class os_func {
 var os = new os_func();
 
 os.execCommand('git add .').then(res=> {
+    console.log("git add gives: ", res);
     os.execCommand(`git commit -m "day: ${diffDays}"`).then(res=> {
         console.log("git commit gives: ", res);
+        os.execCommand(`git push`).then(res=> {
+            console.log("git push gives: ", res);
+        }).catch(err=> {
+            console.log("git push gives error: ", err);
+        })
     }).catch(err=> {
         console.log("git commit gives error: ", err);
     })
-    console.log("git add gives: ", res);
 }).catch(err=> {
     console.log("git add gives error: ", err);
 })

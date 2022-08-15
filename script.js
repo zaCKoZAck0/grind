@@ -12,11 +12,11 @@ var diffDays = parseInt((today - fromDate) / (1000 * 60 * 60 * 24), 10) + 1;
 const hr = "\n---\n"
 
 const date = hr +
-    "> Thu Aug 11 2022" +
+    "> From: Thu Aug 11 2022" +
     hr + hr +
-    `> ${tillDate}` +
+    `> Till: ${tillDate}` +
     hr;
-const streak = "\n"+`**Streak: ${diffDays} days** :fire:`
+const streak = "\n" + `**Streak: ${diffDays} days** :fire:`
 
 const qnHeader = "\n\n### Latest Question Explanation :octopus:\n"
 
@@ -25,12 +25,12 @@ let explaination = "";
 let questions = "";
 
 try {
-  let data = fs.readFileSync('explaination.md', 'utf8');
-  explaination = data;
-  data = fs.readFileSync('questions.md', 'utf8');
-  questions = data;
+    let data = fs.readFileSync('explaination.md', 'utf8');
+    explaination = data;
+    data = fs.readFileSync('questions.md', 'utf8');
+    questions = data;
 } catch (err) {
-  console.error(err);
+    console.error(err);
 }
 
 
@@ -41,7 +41,7 @@ fs.writeFileSync('readme.md', header + date + streak + qnHeader + explaination +
 });
 
 class os_func {
-    constructor () {
+    constructor() {
         this.execCommand = function (cmd) {
             return new Promise((resolve, reject) => {
                 exec(cmd, (error, stdout, stderr) => {
@@ -57,18 +57,18 @@ class os_func {
 }
 var os = new os_func();
 
-os.execCommand('git add .').then(res=> {
+os.execCommand('git add .').then(res => {
     console.log("git add gives: ", res);
-    os.execCommand(`git commit -m "day: ${diffDays}"`).then(res=> {
+    os.execCommand(`git commit -m "day: ${diffDays}"`).then(res => {
         console.log("git commit gives: ", res);
-        os.execCommand(`git push`).then(res=> {
+        os.execCommand(`git push`).then(res => {
             console.log("git push gives: ", res);
-        }).catch(err=> {
+        }).catch(err => {
             console.log("git push gives error: ", err);
         })
-    }).catch(err=> {
+    }).catch(err => {
         console.log("git commit gives error: ", err);
     })
-}).catch(err=> {
+}).catch(err => {
     console.log("git add gives error: ", err);
 })

@@ -29,6 +29,8 @@ try {
     explaination = data;
     data = fs.readFileSync('questions.md', 'utf8');
     questions = data;
+    let res=data.toString().split('\n').length;
+    console.log(res)
 } catch (err) {
     console.error(err);
 }

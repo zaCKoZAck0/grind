@@ -1,18 +1,3 @@
-# Grind :zap:
-
-### Keeping a record of all the Questions I solve daily, so I don't slack off.
-
----
->From:  Thu, 11 Aug
----
----
->Till: Tue, 16 Aug
----
-
-**Streak: 6 days** :fire:
-
-### Latest Question Explanation :octopus:
-
 ---
 
 

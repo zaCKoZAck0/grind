@@ -10,7 +10,7 @@
 ---
 
 **Streak: 6 days** :fire: &
-**Number of Questions: 11** :relieved:
+**Number of Questions: 12** :relieved:
 
 ### Latest Question Explanation :octopus:
 ##### I put explainations late for self clarification. Thanks.
@@ -73,6 +73,7 @@ class Solution:
 ---
 | Day | Questions |
 | --- | ----------- |
+|6|First Unique Character in a String|
 |5|Integer to Roman|
 |5|Roman to Integer|
 |4|Word Ladder II|

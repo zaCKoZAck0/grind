@@ -13,6 +13,7 @@
 **Number of Questions: 11** :relieved:
 
 ### Latest Question Explanation :octopus:
+I put explainations late for self clarification. Thanks.
 ---
 ### 1. Question (Word Ladder)
 

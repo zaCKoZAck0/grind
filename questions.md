@@ -1,5 +1,6 @@
 | Day | Questions |
 | --- | ----------- |
+|6|Sort Characters By Frequency|
 |6|First Unique Character in a String|
 |5|Integer to Roman|
 |5|Roman to Integer|

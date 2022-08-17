@@ -1,5 +1,9 @@
 | Day | Questions |
 | --- | ----------- |
+|7|Unique Morse Code Words|
+|6|Remove Duplicates from Sorted Array|
+|6|Palindrome Number|
+|6|Longest Common Prefix|
 |6|Sort Characters By Frequency|
 |6|First Unique Character in a String|
 |5|Integer to Roman|

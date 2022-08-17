@@ -14,6 +14,7 @@
 
 ### Latest Question Explanation :octopus:
 ##### I put explainations late for self clarification. Thanks.
+This is not the exact date I started solving questions, so don't worry the date only refers to the day I started documenting.
 ---
 ### 1. Question (Word Ladder)
 

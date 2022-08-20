@@ -1,5 +1,6 @@
 | Day | Questions |
 | --- | ----------- |
+|10|Climbing Stairs|
 |9|Rotate Array|
 |9|Squares of a Sorted Array|
 |9|Search Insert Position|

@@ -6,11 +6,11 @@
 ---
 
 ---
-> Till: Fri Aug 19 2022
+> Till: Sat Aug 20 2022
 ---
 
-**Streak: 9 days** :fire: &
-**Number of Questions: 32** :relieved:
+**Streak: 10 days** :fire: &
+**Number of Questions: 33** :relieved:
 
 ### Latest Question Explanation :octopus:
 ##### I put explainations late for self clarification. Thanks.
@@ -74,6 +74,7 @@ class Solution:
 ---
 | Day | Questions |
 | --- | ----------- |
+|10|Climbing Stairs|
 |9|Rotate Array|
 |9|Squares of a Sorted Array|
 |9|Search Insert Position|

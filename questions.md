@@ -1,5 +1,13 @@
 | Day | Questions |
 | --- | ----------- |
+|11|Reverse Words in a String III|
+|11|Reverse String|
+|11|Shifting Letters II|
+|11|Time Needed to Rearrange a Binary String|
+|11|Minimum Recolors to Get K Consecutive Black Blocks|
+|10|Minimum Number of Refueling Stops|
+|10|Two Sum II - Input Array Is Sorted|
+|10|Move Zeroes|
 |10|Climbing Stairs|
 |9|Rotate Array|
 |9|Squares of a Sorted Array|

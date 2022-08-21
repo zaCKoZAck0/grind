@@ -6,11 +6,11 @@
 ---
 
 ---
-> Till: Sat Aug 20 2022
+> Till: Sun Aug 21 2022
 ---
 
-**Streak: 10 days** :fire: &
-**Number of Questions: 33** :relieved:
+**Streak: 11 days** :fire: &
+**Number of Questions: 41** :relieved:
 
 ### Latest Question Explanation :octopus:
 ##### I put explainations late for self clarification. Thanks.
@@ -74,6 +74,14 @@ class Solution:
 ---
 | Day | Questions |
 | --- | ----------- |
+|11|Reverse Words in a String III|
+|11|Reverse String|
+|11|Shifting Letters II|
+|11|Time Needed to Rearrange a Binary String|
+|11|Minimum Recolors to Get K Consecutive Black Blocks|
+|10|Minimum Number of Refueling Stops|
+|10|Two Sum II - Input Array Is Sorted|
+|10|Move Zeroes|
 |10|Climbing Stairs|
 |9|Rotate Array|
 |9|Squares of a Sorted Array|

@@ -10,7 +10,7 @@
 ---
 
 **Streak: 18 days** :fire: &
-**Number of Questions: 41** :relieved:
+**Number of Questions: 63** :relieved:
 
 ### Latest Question Explanation :octopus:
 ##### I put explainations late for self clarification. Thanks.
@@ -74,6 +74,28 @@ class Solution:
 ---
 | Day | Questions |
 | --- | ----------- |
+|18|Merge Two Binary Trees|
+|18|Longest Subsequence With Limited Sum|
+|18|Max Sum of Rectangle No Larger Than K|
+|18|Max Area of Island|
+|17|Flood Fill|
+|16|Reordered Power of 2|
+|15|Ransom Note|
+|14|Merge Sorted Array|
+|14|Power of Three|
+|14|Symmetric Tree|
+|13|Permutation in String|
+|13|Longest Substring Without Repeating Characters|
+|13|Palindrome Linked List|
+|13|Same Tree|
+|13|Remove Nth Node From End of List|
+|12|Sqrt(x)|
+|12|Middle of the Linked List|
+|12|Power of Three|
+|12|Power of Two|
+|12|Power of Four|
+|12|Stamping The Sequence|
+|12|Remove Duplicates from Sorted List|
 |11|Reverse Words in a String III|
 |11|Reverse String|
 |11|Shifting Letters II|
